@@ -146,6 +146,9 @@ objects:
     resources:
       requests:
         storage: ${VOLUME_CAPACITY}
+    selector:
+      matchLabels:
+        node: node01
 parameters:
 - displayName: Sonatype Nexus service name
   name: SERVICE_NAME
